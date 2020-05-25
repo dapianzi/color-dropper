@@ -19,6 +19,7 @@
     "hooks": {}
   },
   "dependencies": {
+    "ant-design-vue": "^1.6.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "@types/chrome": "^0.0.74",
     "archiver": "^3.0.0",
     "babel-loader": "^8.0.2",
+    "babel-plugin-import": "^1.13.0",
     "copy-webpack-plugin": "^5.1.1",
     "core-js": "^3.0.1",
     "cross-env": "^5.2.0",

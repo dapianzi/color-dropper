@@ -75,8 +75,11 @@ const config = {
     }),
     new CopyPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
+      { from: 'camera.png', to: 'camera.png'},
+      { from: 'white.png', to: 'white.png'},
+      { from: 'screenshot/screenshot.js', to: './screenshot/screenshot.js'},
       { from: 'popup/popup.html', to: 'popup/popup.html', transform: transformHtml },
-      { from: 'snapshot/snapshot.html', to: 'snapshot/snapshot.html', transform: transformHtml },
+      { from: 'screenshot/screenshot.html', to: 'screenshot/screenshot.html', transform: transformHtml },
       {
         from: 'manifest.json',
         to: 'manifest.json',
