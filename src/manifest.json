@@ -15,5 +15,5 @@
     "default_icon": "camera.png",
     "default_title": "color-dropper"
   },
-  "permissions": ["activeTab", "clipboardWrite"]
+  "permissions": ["contextMenus", "activeTab", "clipboardWrite"]
 }

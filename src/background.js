@@ -9,8 +9,7 @@
 // open.
 var id = 100;
 
-// Listen for a click on the camera icon. On that click, take a screenshot.
-chrome.browserAction.onClicked.addListener(function () {
+function takeScreenShot() {
 	// @see [https://developer.chrome.com/extensions/tabs#method-captureVisibleTab]
 	chrome.tabs.captureVisibleTab({ format: 'png' }, function (screenshotUrl) {
 		var viewTabUrl = chrome.extension.getURL('screenshot/screenshot.html?id=' + id++);
@@ -45,4 +44,18 @@ chrome.browserAction.onClicked.addListener(function () {
 			targetId = tab.id;
 		});
 	});
+}
+// Listen for a click on the camera icon. On that click, take a screenshot.
+chrome.browserAction.onClicked.addListener(takeScreenShot);
+
+
+// Listen for a right click on the web page.
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+	takeScreenShot();
+});
+chrome.contextMenus.create({
+	"id": "open",
+	"title" : "Screen shot",
+	"type" : "normal",
+	"contexts" : ["all"]
 });
