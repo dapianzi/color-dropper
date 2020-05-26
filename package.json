@@ -18,10 +18,7 @@
   "husky": {
     "hooks": {}
   },
-  "dependencies": {
-    "ant-design-vue": "^1.6.1",
-    "vue": "^2.6.10"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",

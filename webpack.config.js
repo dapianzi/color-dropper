@@ -11,7 +11,7 @@ const config = {
   context: __dirname + '/src',
   entry: {
     'background': './background.js',
-    'popup/popup': './popup/popup.js',
+    // 'popup/popup': './popup/popup.js',
   },
   output: {
     path: __dirname + '/dist',
@@ -76,9 +76,10 @@ const config = {
     new CopyPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
       { from: 'camera.png', to: 'camera.png'},
-      { from: 'white.png', to: 'white.png'},
+      // { from: 'white.png', to: 'white.png'},
+      { from: 'background.js', to: 'background.js'},
       { from: 'screenshot/screenshot.js', to: './screenshot/screenshot.js'},
-      { from: 'popup/popup.html', to: 'popup/popup.html', transform: transformHtml },
+      // { from: 'popup/popup.html', to: 'popup/popup.html', transform: transformHtml },
       { from: 'screenshot/screenshot.html', to: 'screenshot/screenshot.html', transform: transformHtml },
       {
         from: 'manifest.json',
