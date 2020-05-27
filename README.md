@@ -35,6 +35,6 @@ npm run build-zip
 
 ## Todo Features
 + 新建`Tab`模式下，复制完成关闭`Tab`
-+ 采用`Content Script`页面注入模式，直接在当前页面提取颜色
++ 采用`Content Script`页面注入模式，直接在当前页面提取颜色，并且有放大镜效果
 + 集成`Color-Picker`，采用当前提取的颜色
 + 颜色提取历史记录
